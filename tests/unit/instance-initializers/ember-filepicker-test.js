@@ -1,9 +1,9 @@
 import Ember from 'ember';
-import { initialize } from 'dummy/instance-initializers/ember-filestack';
+import { initialize } from 'dummy/instance-initializers/ember-filepicker';
 import { module, test } from 'qunit';
 import destroyApp from '../../helpers/destroy-app';
 
-module('Unit | Instance Initializer | ember filestack', {
+module('Unit | Instance Initializer | ember filepicker', {
   beforeEach: function() {
     Ember.run(() => {
       this.application = Ember.Application.create();

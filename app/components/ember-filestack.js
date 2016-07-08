@@ -1,1 +1,0 @@
-export { default } from 'ember-filepicker/components/ember-filestack';

@@ -1,6 +1,6 @@
 /* globals filepicker */
 import Ember from 'ember';
-import layout from '../templates/components/ember-filestack';
+import layout from '../templates/components/ember-filepicker';
 
 const { Component } = Ember;
 
