@@ -5,14 +5,22 @@ import layout from '../templates/components/ember-filepicker';
 const { Component } = Ember;
 
 export default Component.extend({
+  buttonText: 'Upload',
   layout,
+  multiple: false,
+  pickerOptions: {},
   actions: {
-    clicked() {
-      filepicker.pick(
-        (file)=> {
-          this.get('onFileSelected')(file);
-        }
-      );
+    selectFile() {
+      if (this.get('multiple')) {
+        filepicker.pickMultiple(this.get('pickerOptions'));
+      } else {
+        filepicker.pick(
+          this.get('pickerOptions'),
+          (file)=> {
+            this.get('onFileSelected')(file);
+          }
+        );
+      }
     }
   }
 });
