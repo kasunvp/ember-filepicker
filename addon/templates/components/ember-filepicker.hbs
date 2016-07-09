@@ -1,1 +1,3 @@
-<div {{action 'selectFile'}}>{{buttonText}}</div>
+{{#if showUploadButton}}
+  <div {{action 'selectFile'}} class='upload-button'>{{buttonText}}</div>
+{{/if}}
