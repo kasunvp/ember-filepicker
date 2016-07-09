@@ -1,6 +1,6 @@
 {
   "name": "ember-filepicker",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Provides a shim to the file upload service library filestack.com/filepicker.io",
   "directories": {
     "doc": "doc",

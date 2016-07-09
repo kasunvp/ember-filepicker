@@ -15,14 +15,14 @@ export default Component.extend({
 
   actions: {
     selectFile() {
-      let method = FILEPICKER_METHOD_PICK_MULTIPLE;
+      let method = FILEPICKER_METHOD_PICK;
       if (this.get('multiple')) {
-        method = FILEPICKER_METHOD_PICK;
+        method = FILEPICKER_METHOD_PICK_MULTIPLE;
       }
       filepicker[method](
         this.get('pickerOptions'),
-        (file)=> {
-          this.get('onFileSelected')(file);
+        (object)=> {
+          this.get('onSelection')(object);
         }
       );
     }
