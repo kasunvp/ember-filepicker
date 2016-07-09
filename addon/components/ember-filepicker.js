@@ -19,7 +19,7 @@ export default Component.extend({
       if (this.get('multiple')) {
         method = FILEPICKER_METHOD_PICK;
       }
-      filepicker.method(
+      filepicker[method](
         this.get('pickerOptions'),
         (file)=> {
           this.get('onFileSelected')(file);
