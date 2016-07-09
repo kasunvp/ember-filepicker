@@ -1,7 +1,7 @@
 {
   "name": "ember-filepicker",
-  "version": "0.0.9",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.10",
+  "description": "Provides a shim to the file upload service library filestack.com/filepicker.io",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -41,7 +41,11 @@
     "loader.js": "^4.0.1"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "filepicker.io",
+    "filepicker",
+    "filestack",
+    "uploader"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.6",
