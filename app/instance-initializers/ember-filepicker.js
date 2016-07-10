@@ -4,6 +4,6 @@ export default {
   name: 'ember-filepicker',
 
   initialize() {
-    filepicker.setKey(config.filepickerKey);
+    filepicker.setKey(config.filepicker.key);
   }
 };
